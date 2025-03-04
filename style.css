@@ -1,0 +1,76 @@
+.card {
+    width: 70vw;
+    max-width: 500px;
+    border: 2px solid #3a3ffa;  /* Slightly lighter border */
+    padding: 3rem;
+    background-color: #181818;  /* Slightly lighter dark gray */
+    border-radius: 0.5rem;
+    color: #e0e0e0;  /* Light gray for better contrast */
+
+    h2 {
+      border: 0;
+      color: #ffcc66; /* Warm yellow for emphasis */
+    }
+
+    .overlay & {
+        /* Gradient with a modern touch */
+        background: linear-gradient(135deg, #3a3a3a, #222);
+        border-color: #fff;
+
+        /* Apply a dotted pattern */
+        background-image: radial-gradient(#333 1px, transparent 1.2px);
+        background-size: 12px 12px; /* Adjusted for balance */
+        background-position: 0 0;
+
+        h2 {
+            text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+            color: #ffdb99; /* Softer golden color */
+        }
+        
+    }
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    margin: 0;
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+    overflow: clip;
+    background: #000; /* Slightly lighter than #090909 for a softer black */
+}
+
+main {
+    display: grid;
+    place-items: center;
+    position: relative;
+
+    > * {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    user-select: none;
+    opacity: var(--opacity, 0);
+
+    /* Adjusted mask for better focus effect */
+    -webkit-mask: radial-gradient(
+      25rem 25rem at var(--x) var(--y),
+      #000 10%,
+      transparent 80%
+    );
+    mask: radial-gradient(
+      25rem 25rem at var(--x) var(--y),
+      #000 10%,
+      transparent 40%
+    );
+
+    transition: 1000ms mask ease;
+    will-change: mask;
+}
