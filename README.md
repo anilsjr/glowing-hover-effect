@@ -1,5 +1,5 @@
 # Glowing Hover Effect
-[live](https://anilsjr.github.io/glowing-hover-effect)
+live : https://anilsjr.github.io/glowing-hover-effect
 ## About
 This repository contains a project that demonstrates glowing hover effects using CSS animations and transitions.
 
