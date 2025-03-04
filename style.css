@@ -3,7 +3,7 @@
     max-width: 500px;
     border: 2px solid #3a3ffa;  /* Slightly lighter border */
     padding: 3rem;
-    background-color: #181818;  /* Slightly lighter dark gray */
+    background-color: #000016;  /* Slightly lighter dark gray */
     border-radius: 0.5rem;
     color: #e0e0e0;  /* Light gray for better contrast */
 
@@ -39,7 +39,7 @@ body {
     place-items: center;
     max-width: 100%;
     overflow: clip;
-    background: #000; /* Slightly lighter than #090909 for a softer black */
+    background: #000009; /* Slightly lighter than #090909 for a softer black */
 }
 
 main {
